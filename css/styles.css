@@ -1,0 +1,126 @@
+
+/* COLOURPALETTE-----------*/
+/*
+DarkBLue:
+HEX: #193759
+RBG:25/55/89
+
+LightBlue
+HEX: #4293CE
+RBG:66/147/206
+
+Orange
+HEX: #F19120
+RBG:241/145/32
+
+Black
+HEX: #000000
+RBG:0/0/0
+*/
+
+
+/* GLOBAL CSS-----------*/
+
+body {
+  font-family: 'Roboto Condensed', sans-serif;
+}
+
+p {
+
+font-family: 'Lato', sans-serif;
+}
+
+
+
+
+/* NAVIGATION-----------*/
+.navBackground{
+  background-color: rgba(0,0,0,0.65);;
+}
+
+.logo{
+  width: 200px;
+  margin-right: 40px;
+}
+.navPages{
+  text-transform: uppercase;
+  font-size: 22px;
+}
+
+.navbar-default .navbar-nav>li>a {
+  color: white;
+  font-weight: 300;
+  top:17px;
+  letter-spacing: 0.2px;
+}
+
+.navbar-default .navbar-nav>li>a:hover,
+.navbar-default .navbar-nav>li>a:active {
+  color: #4293CE;
+}
+
+.navbar-default .navbar-nav>li>a.navColourActive{
+  color: #4293CE;
+}
+
+.navbar-toggle {
+  position: absolute;
+  top:10px;
+  right:10px;
+  border:none;
+}
+
+.navbar-toggle .icon-bar {
+    display: block;
+    width: 35px;
+    height: 4px;
+    border-radius: 5px;
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+    background-color: #4293CE;
+}
+
+.navbar-default .navbar-toggle:focus,
+.navbar-default .navbar-toggle:hover,
+.navbar-default .navbar-toggle:active {
+        background-color: transparent;
+}
+
+
+@media screen and (max-width: 844px) {
+/* NAVIGATION-----------------------------------------*/
+  .navbar-nav {
+      margin-top: -18px;
+      margin-bottom: 17px;
+  }
+
+  .navbar-default .navbar-nav>li>a.navColourActive {
+    color: white;
+  }
+
+  .navbar-default .navbar-nav>li>a:hover, .navbar-default .navbar-nav>li>a:active {
+    color: #4293CE;
+    background-color: #4293CE;
+    color: white;
+}
+
+.container-fluid>.navbar-collapse, .container-fluid>.navbar-header, .container>.navbar-collapse, .container>.navbar-header {
+    margin-right: -30px;
+    margin-left: -30px;
+}
+
+.navbar-default .navbar-collapse, .navbar-default .navbar-form {
+    border: none;
+}
+
+#collapsemenu {
+  margin-top:0px;
+}
+
+.nav>li {
+    position: relative;
+    display: block;
+    text-align: center;
+}
+}

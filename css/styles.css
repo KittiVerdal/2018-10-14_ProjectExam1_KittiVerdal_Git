@@ -45,7 +45,7 @@ body {
   }
 
   p.bodyTextBottom{
-    margin-bottom: 100px;
+    margin-bottom: 305px;
   }
 
   p.graphicFacts{
@@ -63,6 +63,10 @@ body {
 
   .extraSpace {
     margin-top: 150px !important;
+  }
+
+  .marginBottom {
+    margin-bottom: 240px;
   }
 
 /* HEADERS-----------------------------------------------------*/
@@ -86,7 +90,7 @@ h1.headerMainBold{
 
   h2.sectionFour{
     position: absolute;
-    margin-top: 250px;
+    margin-top: 504px;;
   }
 
   h3.subHeader{
@@ -101,7 +105,7 @@ h1.headerMainBold{
 
   h3.sectionFourText {
     position: absolute;
-    margin-top: 370px;
+    margin-top: 620px;
     color: #F19120;
   }
 
@@ -194,7 +198,7 @@ h1.headerMainBold{
   canvas{
       background-color: transparent;
       width: 95%;
-      height:700px;
+      height:1200px;
       margin-bottom: 30px;
   }
 
@@ -223,7 +227,7 @@ h1.headerMainBold{
   #countdown {
     position: relative;
     margin: auto;
-    margin-top: 150px;
+    margin-top: 15%;
     height: 40px;
     width: 40px;
     text-align: center;
@@ -243,7 +247,7 @@ h1.headerMainBold{
     text-align: center;
     color: white;
     line-height: 110px;
-    padding-top: 30px;
+    padding-top: 10%;
   }
 
   a.btnStyle {
@@ -265,6 +269,18 @@ h1.headerMainBold{
   a.btnStyle:hover {
     color: white;
     background-color: rgba(0,0,0,0.35);
+  }
+
+  #btnAstronautPage{
+    position: absolute;
+    margin-top: 60%;
+    width: 350px;
+    margin-left: 0;
+  }
+
+  #btnAstronautPage:hover{
+    color: white;
+    background-color: rgba(0,0,0,0.65);
   }
 
   .extraSpace {
@@ -325,11 +341,27 @@ h1.headerMainBold{
     margin-bottom: 180px;
   }
 
+  .chart.second {
+    margin-bottom: 120px;
+    padding-right: 10px;
+  }
+
   .chart figcaption {
     padding: 50px 25px;
     width: 190px;
     height: 190px;
     border: 20px solid rgba(25,55,89,0.3);
+    border-radius: 100px;
+    line-height: 50px;
+    display: inline-block;
+    margin-top: 20px;
+  }
+
+  .chart.second figcaption {
+    padding: 41px 25px;
+    width: 140px;
+    height: 140px;
+    border: 10px solid rgba(25,55,89,0.3);
     border-radius: 100px;
     line-height: 50px;
     display: inline-block;
@@ -436,6 +468,12 @@ h1.headerMainBold{
 
   }
 
+  .interstage{
+    width: 250px;
+    margin-bottom: 10px;
+    transform: rotate(-20deg);
+  }
+
 /* PATHS----------------------------------------------------*/
 .path2 {
     stroke-dasharray: 300;
@@ -521,6 +559,11 @@ h1.headerMainBold{
     background-color: black;
     width: 100%;
   }
+
+  .container-fluid.footer.index{
+      position: absolute;
+    }
+
 
   .logoFooter {
     width: 150px;

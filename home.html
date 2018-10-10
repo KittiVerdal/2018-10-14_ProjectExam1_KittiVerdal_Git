@@ -101,24 +101,9 @@
         <!--ROW 5:  WITH STAGE2: TEXT + ILLUSTRATIONS------------------------------------------------------------------------->
         <div class="row" class="marginTop">
           <div class="col-md-offset-1 col-md-4 col-md-push-5">
-            <!-- HTML Chart -->
-            <!--<figure class="chart second" id="chartTwo" data-percent="75">
-              <div class="html"></div>
-              <figcaption>HTML</figcaption>
-              <svg width="200" height="200">
-           <circle class="outer" cx="95" cy="95" r="85" transform="rotate(-90, 95, 95)"/>
-         </svg>
-            </figure>
 
-            <figure class="chart second" data-percent="25">
-              <div class="html"></div>
-              <figcaption>Node</figcaption>
-              svg width="200" height="200">
-        <circle class="outer" cx="95" cy="95" r="85" transform="rotate(-90, 95, 95)"/>
-      </svg>----->
-
-      <div class="circle" id="circles-1"></div>
-            </figure>
+            <div class="circle" id="circles-4"></div>
+            <div class="circle" id="circles-3"></div>
             <div class="clearfix"></div>
 
             <img alt="speed illustration" src="images/thrust.svg" class="thrust" align="left">
@@ -243,22 +228,8 @@
         <!--ROW 2:  WITH CIRCLES AND THRUST----------------------------------------------------------------->
         <div class="row">
           <div class="col-sm-5 extraSpace">
-            <!-- HTML Chart -->
-            <figure class="chart" id="chartOne" data-percent="75">
-              <div class="html"></div>
-              <figcaption>HTML</figcaption>
-              <!--<svg width="200" height="200">
-               <circle class="outer" cx="95" cy="95" r="85" transform="rotate(-90, 95, 95)"/>
-             </svg>------>
-            </figure>
-
-            <figure class="chart" data-percent="25">
-              <div class="html"></div>
-              <figcaption>Node</figcaption>
-              <!--<svg width="200" height="200">
-            <circle class="outer" cx="95" cy="95" r="85" transform="rotate(-90, 95, 95)"/>
-          </svg>----->
-            </figure>
+            <div class="circle" id="circles-2"></div>
+            <div class="circle" id="circles-1"></div>
           </div>
           <!---column------->
           <div class="col-md-offset-1 col-md-4 extraSpace">
@@ -282,7 +253,7 @@
 
         <!--ROW 1:  WITH STAGE1 TEXT - MERLIN - STATUE OF LIBERTY-------------------------------------------------->
         <div class="row" class="marginTop">
-          <div class="col-md-offset-1 col-md-4 col-md-push-5">
+          <div class="col-md-offset-1 col-md-4 col-md-push-5 smallScreens">
             <img alt="illustration comparing the height of a rocket to the statue of liberty" src="images/statueOfLibertyGraphic.svg" class="statue" align="left">
             <h4 class="graphicText two"><span class="number">70</span> M</h4>
             <svg height="5px" width="150px" class="path1Margin">
@@ -300,7 +271,7 @@
               feature.</p>
           </div>
           <!---column-->
-          <div class="col-md-5 col-md-pull-5">
+          <div class="col-md-5 col-md-pull-5 smallScreens">
             <div class="carousel slide" id="stageOne">
               <div class="carousel-inner stageOne">
                 <div class="item active">
@@ -335,10 +306,12 @@
                 Falcon 9 generates more than 1.7 million pounds of thrust at sea level but gets up to over 1.8 million pounds of thrust in the vacuum of space.</p>
           </div>
           <!---column-->
-          <div class="col-md-2">
+          <div class="col-md-2 bottomColumn">
             <div id="rocketFixed">
               <img id="rocketTop" class="rocket" alt="Rocket launching illustration" src="images/rocket-Top-Part.svg">
+              <div class="clearfix"></div>
               <img id="rocketMedium" class="rocket" alt="Rocket launching illustration" src="images/rocket-Medium-Part.svg">
+              <div class="clearfix"></div>
               <img id="rocketLower" class="rocket" alt="Rocket launching illustration" src="images/rocket-Lower-Part.svg">
               <div id="sequence" class="rocketFireBg">
                 <img id="rocketFire" alt="Rocket launching illustration" src="images/Rocket-launch-1.svg" width="130" height="130">
@@ -429,37 +402,7 @@
     <script src="js/tether.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/circle.js"></script>
+    <script src="js/circle.create.js"></script>
     <script src="js/stars.js"></script>
     <script src="js/rocket.js"></script>
-    <!--TODO:MOVE to own file-->
-    <script>
-    var myCircle = Circles.create({
-        id:                  'circles-1',
-        radius:              60,
-        value:               43,
-        maxValue:            100,
-        width:               10,
-        text:                function(value){return value + '%';},
-        colors:              ['#D3B6C6', '#4B253A'],
-        duration:            700,
-        wrpClass:            'circles-wrp',
-        textClass:           'circles-text',
-        valueStrokeClass:    'circles-valueStroke',
-        maxValueStrokeClass: 'circles-maxValueStroke',
-        styleWrapper:        true,
-        styleText:           true
-      });
-
-      $(window).scroll(function() {
-       var hT = $('#circles-1').offset().top,
-           hH = $('#circles-1').outerHeight(),
-           wH = $(window).height(),
-           wS = $(this).scrollTop();
-       if (wS > (hT+hH-wH)){
-           myCircle.update(true);
-           console.log('I have updated');
-
-       }
-    });
-    </script>
   </body>

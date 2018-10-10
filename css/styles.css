@@ -22,6 +22,7 @@ RBG:0/0/0
 /* GLOBAL CSS-----------------------------------------------------*/
 body {
   font-family: 'Roboto Condensed', sans-serif;
+  color: white;
 
   }
 
@@ -39,7 +40,6 @@ body {
   p {
   font-family: 'Lato', sans-serif;
   font-size: 13px;
-  color: white;
   letter-spacing: 1.3px;
   font-weight: 300;
   }
@@ -288,153 +288,15 @@ h1.headerMainBold{
   }
 
 /* CIRCLES PERCENTAGE----------------------------------------------------*/
-.html {
-    top: 50px;
-    left: 45px;
-  }
+#circles-1, #circles-2, #circles-3, #circles-4 {
+  display: inline-block;
+  margin-bottom: 20px;
+}
 
-  .node {
-    top: 50px;
-    left: 45px;
-  }
-
-  .chart svg {
-    top: 0;
-    left: 40px;
-  }
-
-  .outer {
-    fill: transparent;
-    stroke: #4293CE;
-    stroke-width: 20;
-    stroke-dasharray: 534;
-    transition: stroke-dashoffset 1s;
-    -webkit-animation-play-state: running;
-
-    /* firefox bug fix - won't rotate at 90deg angles */
-    -moz-transform: rotate(-89deg) translateX(-190px);
-  }
-
-  .outerTwo {
-    fill: transparent;
-    stroke: #4293CE;
-    stroke-width: 20;
-    stroke-dasharray: 534;
-    transition: stroke-dashoffset 1s;
-    -webkit-animation-play-state: running;
-
-    /* firefox bug fix - won't rotate at 90deg angles */
-    -moz-transform: rotate(-89deg) translateX(-190px);
-  }
-
-  .chart:hover .outer {
-    stroke-dashoffset: 534 !important;
-    -webkit-animation-play-state: paused;
-  }
-
-  .chart {
-    position: relative;
-    display: inline-block;
-    color: #999;
-    font-size: 20px;
-    text-align: center;
-    margin-bottom: 180px;
-  }
-
-  .chart.second {
-    margin-bottom: 120px;
-    padding-right: 10px;
-  }
-
-  .chart figcaption {
-    padding: 50px 25px;
-    width: 190px;
-    height: 190px;
-    border: 20px solid rgba(25,55,89,0.3);
-    border-radius: 100px;
-    line-height: 50px;
-    display: inline-block;
-    margin-top: 20px;
-  }
-
-  .chart.second figcaption {
-    padding: 41px 25px;
-    width: 140px;
-    height: 140px;
-    border: 10px solid rgba(25,55,89,0.3);
-    border-radius: 100px;
-    line-height: 50px;
-    display: inline-block;
-    margin-top: 20px;
-  }
-
-  .html + svg .outer {
-    stroke: #e34f26;
-  }
-
-  .node + svg .outer {
-    stroke: #83cd29;
-  }
-
-  #chartOne {
+  #circles-1, #circles-3 {
     margin-left: 20px;
-    margin-right:20px;
   }
 
-
-  /* END Circle colors and graphic positions */
-
-  .chart[data-percent='75'] .outer {
-    stroke-dashoffset: 360;
-    -webkit-animation: show75 2s;
-    animation: show75 2s;
-  }
-
-  .chart[data-percent='25'] .outer {
-    stroke-dashoffset: 401;
-    -webkit-animation: show25 2s;
-    animation: show25 2s;
-  }
-
-  @-webkit-keyframes show75 {
-    from {
-      stroke-dashoffset: 537;
-    }
-
-    to {
-      stroke-dashoffset: 360;
-    }
-  }
-
-  @keyframes show75 {
-    from {
-      stroke-dashoffset: 537;
-    }
-
-    to {
-      stroke-dashoffset: 360;
-    }
-  }
-
-  @-webkit-keyframes show25 {
-    from {
-      stroke-dashoffset: 537;
-    }
-
-    to {
-      stroke-dashoffset: 401;
-    }
-  }
-
-  @keyframes show25 {
-    from {
-      stroke-dashoffset: 537;
-    }
-
-    to {
-      stroke-dashoffset: 401;
-    }
-  }
 
 /* ILLUSTRATIONS----------------------------------------------------*/
 .merlin {
@@ -514,6 +376,16 @@ h1.headerMainBold{
   #rocketFire {
     margin-top: -11px;
     z-index: -1;
+  }
+
+  #rocketFixed {
+    margin-bottom: 0; */
+    /* position: sticky; */
+    margin-right: 0px;
+    margin-left: 85%;
+    /* width: 18%; */
+    margin-top: -108%;
+    /* margin: 100px; */
   }
 
 /* NAVIGATION----------------------------------------------------*/
@@ -658,6 +530,59 @@ h1.headerMainBold{
   }
   }
 
+@media screen and (max-width: 1091px){
+.smallScreens{
+  width: 80%;
+  margin-top:100px;
+}
+}
+
+@media screen and (max-width: 970px){
+p.bodyTextBottom {
+    margin-bottom: 225px;
+}
+
+#rocketFixed {
+  margin-top: -93%
+  margin-bottom:56px;
+  height: 633px;
+}
+
+.bottomColumn{
+  margin-bottom: 30px;
+}
+
+.merlin {
+    width: 238px;
+    height: auto;
+    margin-right: 30%;
+    margin-left: 58%;
+    margin-bottom: -185px;
+    margin-top: 83px;
+    float: none;
+}
+
+.statue {
+    width: 276px;
+    margin-bottom: -139px;
+}
+
+h4.graphicText.two {
+    margin-top: 274px;
+}
+
+svg.path1Margin {
+    margin-top: 6px;
+    display: block;
+    margin-left: 49%;
+}
+
+p.graphicFacts {
+    width: 298px;
+}
+
+}
+
 @media screen and (max-width: 844px) {
 /* HEADER---------------------------------------------------------*/
 #countdown-number {
@@ -705,3 +630,58 @@ h1.headerMainBold{
       text-align: center;
   }
   }
+
+  @media screen and (max-width: 740px) {
+    h3.subHeader {
+      font-size: 16px;
+    }
+
+    h1.headerMainBold {
+    font-size: 43px;
+    text-transform: uppercase;
+    color: white;
+    font-weight: 700;
+    line-height: 43px;
+    margin-top: 0;
+  }
+
+    p{
+      font-size: 12px;
+    }
+
+
+    p.bodyTextBottom {
+    margin-bottom: 0px;
+  }
+
+  .rocket {
+    width: 95px;
+  }
+
+  .merlin {
+    width: 165px;
+    height: auto;
+    margin-right: 30%;
+    margin-left: 48%;
+    margin-bottom: -58px;
+  }
+
+  #sequence.rocketFireBg {
+    width: 70px;
+    height: 70px;
+  }
+
+  #rocketFire {
+    margin-top: -36px;
+    z-index: -1;
+    width: 70px;
+  }
+
+  #rocketFixed {
+    height: 417px;
+}
+
+.smallScreens {
+  margin-top: 65px;
+}
+}

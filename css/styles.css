@@ -453,11 +453,14 @@ h1.headerMainBold{
     display: inline-block;
   }
 
+  #rocketFixed {
+  }
+
   .rocket{
-    top:180px;
-    position: absolute;
-    width: 130px;
+    width: 150px;
     height: auto;
+    margin-left: -10px;
+    margin-bottom: -2px;
   }
 
   .thrust {
@@ -471,7 +474,7 @@ h1.headerMainBold{
   .interstage{
     width: 250px;
     margin-bottom: 10px;
-    transform: rotate(-20deg);
+    /*transform: rotate(-20deg);*/
   }
 
 /* PATHS----------------------------------------------------*/
@@ -496,6 +499,21 @@ h1.headerMainBold{
     to {
       stroke-dashoffset: 0;
     }
+  }
+
+/* ROCKET ANIMATION----------------------------------------------------*/
+#sequence.rocketFireBg {
+  width: 130px;
+  height: 130px;
+  background-image: url(../images/Rocket-launch-bg.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin-top: 10px;
+  }
+
+  #rocketFire {
+    margin-top: -11px;
+    z-index: -1;
   }
 
 /* NAVIGATION----------------------------------------------------*/

@@ -28,7 +28,8 @@
           </div>
           <!---row------------>
         </div>
-        <!---container stars------------>
+
+        <!---container stars can you open up your browser lets see if this works?------------>
 
         <!--ROW 6:  WITH STAGE2: TEXT + ILLUSTRATIONS------------------------------------------------------------------------->
         <div class="row" class="marginTop">
@@ -101,20 +102,22 @@
         <div class="row" class="marginTop">
           <div class="col-md-offset-1 col-md-4 col-md-push-5">
             <!-- HTML Chart -->
-            <figure class="chart second" id="chartTwo" data-percent="75">
+            <!--<figure class="chart second" id="chartTwo" data-percent="75">
               <div class="html"></div>
               <figcaption>HTML</figcaption>
-              <!--<svg width="200" height="200">
+              <svg width="200" height="200">
            <circle class="outer" cx="95" cy="95" r="85" transform="rotate(-90, 95, 95)"/>
-         </svg>------>
+         </svg>
             </figure>
 
             <figure class="chart second" data-percent="25">
               <div class="html"></div>
               <figcaption>Node</figcaption>
-              <!--<svg width="200" height="200">
+              svg width="200" height="200">
         <circle class="outer" cx="95" cy="95" r="85" transform="rotate(-90, 95, 95)"/>
       </svg>----->
+
+      <div class="circle" id="circles-1"></div>
             </figure>
             <div class="clearfix"></div>
 
@@ -172,7 +175,7 @@
         <div class="container stars">
           <div class="row">
             <h2 class="headerMainLight sectionFour">We are now entering space.<br> You are here.</h2>
-            <h3 class="sectionFourText"> On a good night, you can see about 19,000,000,000,000,000 miles.</h3>
+            <h3 class="sectionFourText"> Space is completely silent. There are no athmosphere in space, which means that sound has no way to travel to be heard.</h3>
             <canvas id="nokey" width="800" height="800">
       Your Browser Don't Support Canvas, Please Download Chrome
   </canvas>
@@ -333,7 +336,14 @@
           </div>
           <!---column-->
           <div class="col-md-2">
-            <img alt="Rocket illustration" src="images/rocketGraphic.svg" class="rocket" align="right">
+            <div id="rocketFixed">
+              <img id="rocketTop" class="rocket" alt="Rocket launching illustration" src="images/rocket-Top-Part.svg">
+              <img id="rocketMedium" class="rocket" alt="Rocket launching illustration" src="images/rocket-Medium-Part.svg">
+              <img id="rocketLower" class="rocket" alt="Rocket launching illustration" src="images/rocket-Lower-Part.svg">
+              <div id="sequence" class="rocketFireBg">
+                <img id="rocketFire" alt="Rocket launching illustration" src="images/Rocket-launch-1.svg" width="130" height="130">
+              </div>
+            </div>
           </div>
           <!---column-->
 
@@ -418,5 +428,38 @@
     <script src="js/jquery.slim.min.js"></script>
     <script src="js/tether.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
+    <script src="js/circle.js"></script>
     <script src="js/stars.js"></script>
+    <script src="js/rocket.js"></script>
+    <!--TODO:MOVE to own file-->
+    <script>
+    var myCircle = Circles.create({
+        id:                  'circles-1',
+        radius:              60,
+        value:               43,
+        maxValue:            100,
+        width:               10,
+        text:                function(value){return value + '%';},
+        colors:              ['#D3B6C6', '#4B253A'],
+        duration:            700,
+        wrpClass:            'circles-wrp',
+        textClass:           'circles-text',
+        valueStrokeClass:    'circles-valueStroke',
+        maxValueStrokeClass: 'circles-maxValueStroke',
+        styleWrapper:        true,
+        styleText:           true
+      });
+
+      $(window).scroll(function() {
+       var hT = $('#circles-1').offset().top,
+           hH = $('#circles-1').outerHeight(),
+           wH = $(window).height(),
+           wS = $(this).scrollTop();
+       if (wS > (hT+hH-wH)){
+           myCircle.update(true);
+           console.log('I have updated');
+
+       }
+    });
+    </script>
   </body>

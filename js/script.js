@@ -8,7 +8,7 @@ var myCircle = Circles.create({
     return value + '%';
   },
   colors: ['rgba(25,55,89,0.4)', '#193759'],
-  duration: 700,
+  duration: 3000,
   wrpClass: 'circles-wrp',
   textClass: 'circles-text',
   valueStrokeClass: 'circles-valueStroke',
@@ -27,7 +27,7 @@ var myCircle2 = Circles.create({
     return value + '%';
   },
   colors: ['rgba(25,55,89,0.4)', '#F19120'],
-  duration: 700,
+  duration: 3000,
   wrpClass: 'circles-wrp',
   textClass: 'circles-text',
   valueStrokeClass: 'circles-valueStroke',
@@ -46,7 +46,7 @@ var myCircle3 = Circles.create({
     return value + '%';
   },
   colors: ['rgba(0,0,0,0.8)', '#4293CE'],
-  duration: 700,
+  duration: 3000,
   wrpClass: 'circles-wrp',
   textClass: 'circles-text',
   valueStrokeClass: 'circles-valueStroke',
@@ -65,7 +65,7 @@ var myCircle4 = Circles.create({
     return value + '%';
   },
   colors: ['rgba(0,0,0,0.8)', '#F19120'],
-  duration: 700,
+  duration: 3000,
   wrpClass: 'circles-wrp',
   textClass: 'circles-text',
   valueStrokeClass: 'circles-valueStroke',
@@ -76,50 +76,51 @@ var myCircle4 = Circles.create({
 
 
 $(window).scroll(function() {
+  var counter;
   var hT = $('#circles-1').offset().top,
     hH = $('#circles-1').outerHeight(),
     wH = $(window).height(),
     wS = $(this).scrollTop();
-  if (wS > (hT + hH - wH)) {
-    myCircle.update(true);
-    console.log('I have updated');
-
-  }
+    if (wS > (hT + hH - wH) && counter < 0) {
+      myCircle1.update(true);
+      counter = 1;
+    }
 });
 
 $(window).scroll(function() {
+  var counter;
   var hT = $('#circles-2').offset().top,
     hH = $('#circles-2').outerHeight(),
     wH = $(window).height(),
     wS = $(this).scrollTop();
-  if (wS > (hT + hH - wH)) {
-    myCircle2.update(true);
-    console.log('I have updated');
-
-  }
+    if (wS > (hT + hH - wH) && counter < 0) {
+      myCircle2.update(true);
+      counter = 1;
+    }
 });
 
 $(window).scroll(function() {
+  var counter;
   var hT = $('#circles-3').offset().top,
     hH = $('#circles-3').outerHeight(),
     wH = $(window).height(),
     wS = $(this).scrollTop();
-  if (wS > (hT + hH - wH)) {
-    myCircle3.update(true);
-    console.log('I have updated');
-
-  }
+    if (wS > ((hT + 300) + hH - wH) && counter < 0) {
+      myCircle3.update(true);
+      counter = 1;
+    }
 });
 
-$(window).scroll(function() {
+$(window).scroll(function(e) {
+  var counter;
   var hT = $('#circles-4').offset().top,
     hH = $('#circles-4').outerHeight(),
     wH = $(window).height(),
     wS = $(this).scrollTop();
-  if (wS > (hT + hH - wH)) {
+  if (wS > ((hT + 300) + hH - wH) && counter < 0) {
+    console.log(hT,hH,wH)
     myCircle4.update(true);
-    console.log('I have updated');
-
+    counter = 1;
   }
 });
 
@@ -139,14 +140,14 @@ window.addEventListener('mousewheel', function(e){
 });
 
 
-/* Countdown index */
-var countdownNumberEl = document.getElementById('countdown-number');
-var countdown = 8;
+// /* Countdown index */
+// var countdownNumberEl = document.getElementById('countdown-number');
+// var countdown = 8;
 
-countdownNumberEl.textContent = countdown;
+// countdownNumberEl.textContent = countdown;
 
-setInterval(function() {
-  countdown = --countdown <= 0 ? 8 : countdown;
+// setInterval(function() {
+//   countdown = --countdown <= 0 ? 8 : countdown;
 
-  countdownNumberEl.textContent = countdown;
-}, 1000);
+//   countdownNumberEl.textContent = countdown;
+// }, 1000);

@@ -2,7 +2,7 @@ var isFormValid = true;
 
 //VALIDATE CONTACT FORM
 
-document.getElementById("contact").addEventListener("click", function() {
+document.getElementById("sendRequest").addEventListener("click", function() {
 
   var firstName = document.getElementById('firstName').value;
   var isFirstNameValid = validateFirstName(firstName);
@@ -43,11 +43,13 @@ document.getElementById("contact").addEventListener("click", function() {
     document.getElementById('subjectError').style.display = "block";
   }
 
+});
+
+document.getElementById('sendRequest').addEventListener("click", function(){
   if (isFormValid) {
     window.location.href = "contact.success.html";
   }
-
-});
+})
 
 //FUNCTIONS CONTACT FORM
 

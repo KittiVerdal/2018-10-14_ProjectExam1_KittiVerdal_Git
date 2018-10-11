@@ -62,11 +62,20 @@ body {
   }
 
   .extraSpace {
-    margin-top: 150px !important;
+    margin-top: 40px !important;
   }
 
   .marginBottom {
     margin-bottom: 240px;
+  }
+
+  .container.middle {
+    height: 1142px;
+    background: url(../images/you-are-here.gif);
+    background-repeat: no-repeat;
+    background-position: right bottom;
+    background-size: 100%;
+    margin-bottom: 300px;
   }
 
 /* HEADERS-----------------------------------------------------*/
@@ -290,11 +299,38 @@ h1.headerMainBold{
 /* CIRCLES PERCENTAGE----------------------------------------------------*/
 #circles-1, #circles-2, #circles-3, #circles-4 {
   display: inline-block;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 
   #circles-1, #circles-3 {
     margin-left: 20px;
+    line-height: 162px;
+  }
+
+  h5.circleText {
+    display: inline-block;
+    margin-left: -364px;
+    text-align: center;
+    position: absolute;
+    top: 138px;
+
+  }
+
+  h5.circleText2 {
+    display: inline-block;
+    margin-left: -141px;
+    text-align: center;
+    position: absolute;
+    top: 138px;
+
+  }
+
+  div.circles-text{
+    line-height: 162px !important;
+  }
+
+  .circles-wrp {
+    margin-top:20px !important;
   }
 
 
@@ -379,14 +415,10 @@ h1.headerMainBold{
   }
 
   #rocketFixed {
-    margin-bottom: 0; */
-    /* position: sticky; */
-    margin-right: 0px;
-    margin-left: 85%;
-    /* width: 18%; */
-    margin-top: -108%;
-    /* margin: 100px; */
-  }
+      position: absolute;
+      right: 10%;
+      top: 5799px;
+    }
 
 /* NAVIGATION----------------------------------------------------*/
 .navbar.navbar-default{
@@ -542,12 +574,6 @@ p.bodyTextBottom {
     margin-bottom: 225px;
 }
 
-#rocketFixed {
-  margin-top: -93%
-  margin-bottom:56px;
-  height: 633px;
-}
-
 .bottomColumn{
   margin-bottom: 30px;
 }
@@ -679,6 +705,7 @@ p.graphicFacts {
 
   #rocketFixed {
     height: 417px;
+    margin-left: 85%;
 }
 
 .smallScreens {

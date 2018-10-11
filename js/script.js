@@ -36,93 +36,54 @@ var myCircle2 = Circles.create({
   styleText: true
 });
 
-var myCircle3 = Circles.create({
-  id: 'circles-3',
-  radius: 65,
-  value: 20,
-  maxValue: 100,
-  width: 7,
-  text: function(value) {
-    return value + '%';
-  },
-  colors: ['rgba(0,0,0,0.8)', '#4293CE'],
-  duration: 3000,
-  wrpClass: 'circles-wrp',
-  textClass: 'circles-text',
-  valueStrokeClass: 'circles-valueStroke',
-  maxValueStrokeClass: 'circles-maxValueStroke',
-  styleWrapper: true,
-  styleText: true
-});
+function createCircles(){
+  var myCircle3 = Circles.create({
+    id: 'circles-3',
+    radius: 65,
+    value: 20,
+    maxValue: 100,
+    width: 7,
+    text: function(value) {
+      return value + '%';
+    },
+    colors: ['rgba(0,0,0,0.8)', '#4293CE'],
+    duration: 3000,
+    wrpClass: 'circles-wrp',
+    textClass: 'circles-text',
+    valueStrokeClass: 'circles-valueStroke',
+    maxValueStrokeClass: 'circles-maxValueStroke',
+    styleWrapper: true,
+    styleText: true
+  });
+  
+  var myCircle4 = Circles.create({
+    id: 'circles-4',
+    radius: 65,
+    value: 80,
+    maxValue: 100,
+    width: 7,
+    text: function(value) {
+      return value + '%';
+    },
+    colors: ['rgba(0,0,0,0.8)', '#F19120'],
+    duration: 3000,
+    wrpClass: 'circles-wrp',
+    textClass: 'circles-text',
+    valueStrokeClass: 'circles-valueStroke',
+    maxValueStrokeClass: 'circles-maxValueStroke',
+    styleWrapper: true,
+    styleText: true
+  });
+};
 
-var myCircle4 = Circles.create({
-  id: 'circles-4',
-  radius: 65,
-  value: 80,
-  maxValue: 100,
-  width: 7,
-  text: function(value) {
-    return value + '%';
-  },
-  colors: ['rgba(0,0,0,0.8)', '#F19120'],
-  duration: 3000,
-  wrpClass: 'circles-wrp',
-  textClass: 'circles-text',
-  valueStrokeClass: 'circles-valueStroke',
-  maxValueStrokeClass: 'circles-maxValueStroke',
-  styleWrapper: true,
-  styleText: true
-});
-
-
-$(window).scroll(function() {
-  var counter;
-  var hT = $('#circles-1').offset().top,
-    hH = $('#circles-1').outerHeight(),
-    wH = $(window).height(),
-    wS = $(this).scrollTop();
-    if (wS > (hT + hH - wH) && counter < 0) {
-      myCircle1.update(true);
-      counter = 1;
+var waypoints = $('#EngineClocks').waypoint({
+  handler: function(direction) {
+    if(direction === "down"){
+      console.log("time to load the circles baby");
+      createCircles();
     }
-});
-
-$(window).scroll(function() {
-  var counter;
-  var hT = $('#circles-2').offset().top,
-    hH = $('#circles-2').outerHeight(),
-    wH = $(window).height(),
-    wS = $(this).scrollTop();
-    if (wS > (hT + hH - wH) && counter < 0) {
-      myCircle2.update(true);
-      counter = 1;
-    }
-});
-
-$(window).scroll(function() {
-  var counter;
-  var hT = $('#circles-3').offset().top,
-    hH = $('#circles-3').outerHeight(),
-    wH = $(window).height(),
-    wS = $(this).scrollTop();
-    if (wS > (hT + 300 + hH - wH) && counter < 0) {
-      myCircle3.update(true);
-      counter = 1;
-    }
-});
-
-$(window).scroll(function(e) {
-  var counter;
-  var hT = $('#circles-4').offset().top,
-    hH = $('#circles-4').outerHeight(),
-    wH = $(window).height(),
-    wS = $(this).scrollTop();
-  if (wS > (hT + hH - wH) && counter < 0) {
-    console.log(hT,hH,wH)
-    myCircle4.update(true);
-    counter = 1;
   }
-});
+})
 
 /* Rocket fire shifter */
 var scrollImage = 1;

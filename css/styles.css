@@ -379,15 +379,18 @@ h1.headerMainBold{
         resize: vertical;
   }
 
-  input{
+  input, textarea#subject {
     font-family: 'Lato', sans-serif;
     color: #555;
   }
 
   .error{
-    color: #C2B1A4;
+    color: #F19120;
     letter-spacing: 0.8px;
     display:none;
+    font-family: 'Lato', sans-serif;
+    margin-top: -15px;
+    margin-bottom: 10px;
   }
 
   button#sendRequest{
@@ -425,6 +428,10 @@ h1.headerMainBold{
     letter-spacing: 1.2px;
     font-size: 16px;
     margin-top: 60px;
+  }
+
+  .contact-container{
+    height:100%;
   }
 
 /* ILLUSTRATIONS----------------------------------------------------*/
@@ -812,4 +819,27 @@ p.graphicFacts {
 
 h2.contactSubHeader {
     font-size: 24px;
+}
+
+img.thumbsUp {
+    width: 40%;
+    margin-left: 30%;
+    margin-right: 30%;
+}
+
+#btnSucessPage{
+  width: 100% !important;
+  margin-left:0px !important;
+  margin-right:0px !important;
+}
+
+}
+
+@media screen and (max-width: 540px) {
+
+  img.thumbsUp {
+      width: 40%;
+      margin-left: 30%;
+      margin-right: 30%;
+  }
 }

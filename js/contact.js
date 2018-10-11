@@ -47,7 +47,7 @@ document.getElementById("sendRequest").addEventListener("click", function() {
 
 document.getElementById('sendRequest').addEventListener("click", function(){
   if (isFormValid) {
-    window.location.href = "contact.success.html";
+    window.location.href = "contact-success.html";
   }
 })
 

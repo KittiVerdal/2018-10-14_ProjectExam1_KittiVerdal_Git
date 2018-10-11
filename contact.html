@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,300i,400|Roboto+Condensed:300,700" rel="stylesheet">
+    <title>Explore space travel journey | rocket | step-by-step | interactive | learning</title>
+  </head>
+
+  <body>
+    <!--SECTION ONE-------------------------------------------------->
+    <div class="container-fluid sky" id="sky">
+      <div class="container">
+          <div class="row">
+            <div class="col-md-12 marginTop marginBottom">
+              <div class="container" id="contact">
+
+                <h1 class="headerMainBold">Contact us for more information</h1>
+                <h2 class="contactSubHeader">We will be happy to help you, normal respondtime is 24h.
+                </h2>
+
+                  <div class="form-group">
+                  <label for="fname">First Name</label>
+                  <input type="text" id="fname" name="firstname" placeholder="Your firstname..">
+                  <span class="error" id="firstNameError">Please insert firstname</span>
+                  </div>
+
+                  <div class="form-group">
+                  <label for="lname">Last Name</label>
+                  <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+                  <span class="error" id="lastNameError">Please insert lastname</span>
+                  </div>
+
+                  <div class="form-group">
+                  <label for="email">Email</label>
+                  <input type="text" id="email" name="email" placeholder="Your email..">
+                  <span class="error" id="emailError">Please insert email adress</span>
+                  </div>
+
+                  <div class="form-group">
+                    <label for="phone">Phone number</label>
+                    <input class="form-control" type="text" id="phone" placeholder="+47">
+                    <span class="error" id="phoneError">Please insert phone number</span>
+                  </div>
+
+                  <div class="form-group">
+                  <label for="subject">Subject</label>
+                  <textarea type="text" id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+                  <span class="error" id="subjectError">Please describe your request</span>
+                  </div>
+
+                  <button type="submit" id="sendRequest" class="sendButton">Send</button>
+
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+<!--NAVIGATION-------------------------------------------->
+    <nav class="navbar navbar-default navbar-fixed-top">
+      <div class="container-fluid navBackground">
+
+        <div class="container">
+          <div class="navbar-header">
+            <a href="index.html"><img alt="SpaceLaunch-logo" src="images/spaceLaunchLogo.svg" class="logo"></a>
+          </div>
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#collapsemenu" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                      <span class="icon-bar"></span>
+                      <span class="icon-bar"></span>
+                      <span class="icon-bar"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="collapsemenu">
+            <ul class="nav navbar-nav">
+              <li> <a href="home.html#footer" class="navPages navColourActive">Home</a></li>
+              <li> <a href="astronauts.html" class="navPages">Astronauts</a></li>
+              <li> <a href="events.html" class="navPages">Events</a></li>
+              <li> <a href="contact.html" class="navPages">Contact</a></li>
+            </ul>
+          </div>
+        </div>
+        <!---container-->
+      </div>
+      <!---container-fluid-->
+    </nav>
+
+    <!--FOOTER---------------------------------------------->
+    <footer>
+      <div class="container-fluid footer" id="footer">
+        <div class="container footer">
+          <div class="row">
+            <div class="col-sm-3">
+              <a href="index.html"><img alt="SpaceLaunch-logo" src="images/spaceLaunchLogo.svg" class="logoFooter"></a>
+            </div>
+            <div class="col-sm-3">
+              <p class="footerText"> Get more information: <br> E-mail:<a href="mailto:kitti@jbl.no"> spacelaunch@spacex.com</a></p>
+            </div>
+            <section>
+              <div class="container">
+                <div class="row">
+                  <div class="col-sm-6">
+                    <h5 class="subscribeTitle">
+                      Subscribe for newsletter and get updates on current space programs
+                    </h5>
+                    <form action="#">
+                      <div class="input-group">
+                        <input class="btn btn-lg" name="email" id="email" type="email" placeholder="Your Email" required>
+                        <button class="btn btn-info btn-lg" type="submit">Subscribe</button>
+                    </form>
+                    </div>
+                  </div>
+            </section>
+
+            </div>
+            </div>
+            <!---row-->
+          </div>
+          <!---container-->
+        </div>
+        <!---container-fluid-->
+
+
+    </footer>

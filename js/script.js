@@ -105,7 +105,7 @@ $(window).scroll(function() {
     hH = $('#circles-3').outerHeight(),
     wH = $(window).height(),
     wS = $(this).scrollTop();
-    if (wS > ((hT + 300) + hH - wH) && counter < 0) {
+    if (wS > (hT + 300 + hH - wH) && counter < 0) {
       myCircle3.update(true);
       counter = 1;
     }
@@ -117,7 +117,7 @@ $(window).scroll(function(e) {
     hH = $('#circles-4').outerHeight(),
     wH = $(window).height(),
     wS = $(this).scrollTop();
-  if (wS > ((hT + 300) + hH - wH) && counter < 0) {
+  if (wS > (hT + hH - wH) && counter < 0) {
     console.log(hT,hH,wH)
     myCircle4.update(true);
     counter = 1;

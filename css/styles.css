@@ -45,7 +45,7 @@ body {
   }
 
   p.bodyTextBottom{
-    margin-bottom: 305px;
+    margin-bottom: 250px;
   }
 
   p.graphicFacts{
@@ -99,7 +99,7 @@ h1.headerMainBold{
 
   h2.sectionFour{
     position: absolute;
-    margin-top: 504px;;
+    margin-top: 450px;;
   }
 
   h3.subHeader{
@@ -114,7 +114,7 @@ h1.headerMainBold{
 
   h3.sectionFourText {
     position: absolute;
-    margin-top: 620px;
+    margin-top: 575px;
     color: #F19120;
   }
 
@@ -415,9 +415,9 @@ h1.headerMainBold{
   }
 
   #rocketFixed {
-      position: absolute;
-      right: 10%;
-      top: 5799px;
+    position: fixed;
+    right: 10%;
+    top: 318px;
     }
 
 /* NAVIGATION----------------------------------------------------*/

@@ -55,7 +55,7 @@ function createCircles(){
     styleWrapper: true,
     styleText: true
   });
-  
+
   var myCircle4 = Circles.create({
     id: 'circles-4',
     radius: 65,
@@ -99,3 +99,21 @@ window.addEventListener('mousewheel', function(e){
   }
   image.src = "images/Rocket-launch-"+ scrollImage + ".svg";
 });
+
+/* Countdown index */
+var count=10;
+
+var counter=setInterval(timer, 1000);
+
+function timer()
+{
+  count=count-1;
+  if (count <= 0)
+  {
+     clearInterval(counter);
+     document.getElementById('countdown-number').style.display = "none";
+     return;
+  }
+
+  document.getElementById("countdown-number").innerHTML=count
+}

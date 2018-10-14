@@ -1,9 +1,9 @@
 var myCircle = Circles.create({
   id: 'circles-1',
-  radius: 100,
+  radius: 140,
   value: 67,
   maxValue: 100,
-  width: 10,
+  width: 14,
   text: function(value) {
     return value + '%';
   },
@@ -19,10 +19,10 @@ var myCircle = Circles.create({
 
 var myCircle2 = Circles.create({
   id: 'circles-2',
-  radius: 100,
+  radius: 140,
   value: 33,
   maxValue: 100,
-  width: 10,
+  width: 14,
   text: function(value) {
     return value + '%';
   },
@@ -39,10 +39,10 @@ var myCircle2 = Circles.create({
 function createCircles(){
   var myCircle3 = Circles.create({
     id: 'circles-3',
-    radius: 65,
+    radius: 140,
     value: 20,
     maxValue: 100,
-    width: 7,
+    width: 14,
     text: function(value) {
       return value + '%';
     },
@@ -58,10 +58,10 @@ function createCircles(){
 
   var myCircle4 = Circles.create({
     id: 'circles-4',
-    radius: 65,
+    radius: 140,
     value: 80,
     maxValue: 100,
-    width: 7,
+    width: 14,
     text: function(value) {
       return value + '%';
     },

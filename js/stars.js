@@ -1,3 +1,9 @@
+//code not written by STUDENT!!
+// refrence and thanks to: CodePen - Nokey
+//https://codepen.io/jkiss/pen/OVEeqK
+
+
+
 var canvas = document.getElementById('nokey'),
    can_w = parseInt(canvas.getAttribute('width')),
    can_h = parseInt(canvas.getAttribute('height')),

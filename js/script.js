@@ -1,6 +1,12 @@
+
+var tablet = window.matchMedia("(min-width:376px) and (max-width: 740px)");
+var mobile = window.matchMedia("(max-width: 375px)");
+
+
+function createCirclesFirst(){
 var myCircle = Circles.create({
   id: 'circles-1',
-  radius: 140,
+  radius: 120,
   value: 67,
   maxValue: 100,
   width: 14,
@@ -19,7 +25,7 @@ var myCircle = Circles.create({
 
 var myCircle2 = Circles.create({
   id: 'circles-2',
-  radius: 140,
+  radius: 120,
   value: 33,
   maxValue: 100,
   width: 14,
@@ -35,11 +41,12 @@ var myCircle2 = Circles.create({
   styleWrapper: true,
   styleText: true
 });
+};
 
 function createCircles(){
   var myCircle3 = Circles.create({
     id: 'circles-3',
-    radius: 140,
+    radius: 120,
     value: 20,
     maxValue: 100,
     width: 14,
@@ -58,7 +65,7 @@ function createCircles(){
 
   var myCircle4 = Circles.create({
     id: 'circles-4',
-    radius: 140,
+    radius: 120,
     value: 80,
     maxValue: 100,
     width: 14,
@@ -76,14 +83,82 @@ function createCircles(){
   });
 };
 
+function showRocket(){
+document.getElementById('rocketFixed').style.visibility = "visible";
+};
+
+function hideRocketOne(){
+  document.getElementById('rocketLower').style.visibility = "hidden";
+    if (mobile.matches) {
+      document.getElementById('sequence').style.marginTop = "-69px";
+    }
+    else if (tablet.matches) {
+      document.getElementById('sequence').style.marginTop = "-119px";
+    }
+    else {
+      document.getElementById('sequence').style.marginTop = "-168px";
+    }
+};
+
+function hideRocketTwo(){
+  document.getElementById('rocketMedium').style.visibility = "hidden";
+  if (mobile.matches) {
+    document.getElementById('sequence').style.marginTop = "-138px";
+  }
+  else if (tablet.matches) {
+    document.getElementById('sequence').style.marginTop = "-224px";
+  }
+  else {
+document.getElementById('sequence').style.marginTop = "-321px";
+  }
+};
+
+var waypoints = $('#journeyClocks').waypoint({
+  handler: function(direction) {
+    if(direction === "down"){
+      console.log("time to load the first circles");
+      createCirclesFirst();
+    }
+  }
+})
+
+
 var waypoints = $('#EngineClocks').waypoint({
   handler: function(direction) {
     if(direction === "down"){
-      console.log("time to load the circles baby");
+      console.log("time to load the second circles");
       createCircles();
     }
   }
 })
+
+var waypoints = $('#showRocket').waypoint({
+  handler: function(direction) {
+    if(direction === "down"){
+      console.log("time to show the rocket");
+      showRocket();
+    }
+  }
+})
+
+var waypoints = $('#hideRocketOne').waypoint({
+  handler: function(direction) {
+    if(direction === "down"){
+      console.log("time to fire stage two of journey");
+      hideRocketOne();
+    }
+  }
+})
+
+var waypoints = $('#hideRocketTwo').waypoint({
+  handler: function(direction) {
+    if(direction === "down"){
+      console.log("time to fire stage three of journey");
+      hideRocketTwo();
+    }
+  }
+})
+
 
 /* Rocket fire shifter */
 var scrollImage = 1;

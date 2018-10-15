@@ -28,6 +28,10 @@ body {
     color:#4293CE;
   }
 
+  span.darkblue {
+    color: #193759;
+  }
+
   a{
     color: #F19120;
     font-weight: 700;
@@ -113,7 +117,7 @@ body {
     margin-bottom: 240px;
   }
 
-  .container.middle {
+  .col-sm-12.middle {
     height: 1142px;
     background: url(../images/you-are-here.gif);
     background-repeat: no-repeat;
@@ -238,6 +242,13 @@ h1.headerMainBold{
     color: #F19120;
   }
 
+  h2.headerMainLight.headerCircle.one{
+    padding-top: 27%;
+    font-size: 36px !important;
+    padding-left: 11px;
+    line-height: 36px !important
+  }
+
 /* CAROUSEL---------------------------------------------------------*/
 .carousel .item{
   height: 100%;
@@ -268,7 +279,7 @@ h1.headerMainBold{
   background-size: 100% 100%;
   height:30px;
   width:30px;
-  margin-top: 110px;
+  margin-top: 200px !important;
   }
 
   .columCarousel{
@@ -287,7 +298,7 @@ h1.headerMainBold{
   }
   canvas{
       background-color: transparent;
-      width: 95%;
+      width: 100%;
       height:1300px;
       margin-top: -716px;
       z-index: -1;
@@ -324,11 +335,10 @@ h1.headerMainBold{
 
   #intro {
     position: fixed;
-    top: 211px;
+    top: 169px;
     margin: 5% auto;
     left:0;
     right:0;
-    width: 80%;
     z-index: -1;
   }
 
@@ -401,7 +411,7 @@ h1.headerMainBold{
     right:0;
     border: 3px solid #F19120;
     border-radius: 100px;
-    top: 700px;
+    top: 588px;
     padding-top: 30px;
     text-align: center;
     text-transform: uppercase;
@@ -436,15 +446,6 @@ h1.headerMainBold{
     position: absolute;
     top: 138px;
 
-  }
-
-
-  video {
-   background:transparent url('parrots.jpg') no-repeat 0 0;
-   -webkit-background-size:cover;
-   -moz-background-size:cover;
-   -o-background-size:cover;
-   background-size:cover;
   }
 
   .circles-wrp {
@@ -568,16 +569,22 @@ h1.headerMainBold{
   }
 
   .merlinEngine.thrust{
-    margin-top: 0px;
     width: 68%;
     margin: 0 auto;
     margin-right: 20%;
     margin-top: -59px;
   }
 
+  .merlinEngine.thrust.merlinTwo{
+  margin-top: 0px;
+  width: 68%;
+  margin: 0 auto;
+  margin-right: 20%;
+  margin-top: 124px;
+  }
 
-
-  #rocketFixed {
+  .col-sm-6.marginTop.topDesktop{
+    margin-top: 285px;
   }
 
   .rocket{
@@ -616,13 +623,9 @@ h1.headerMainBold{
   }
 
 /* PATHS----------------------------------------------------*/
-.path2 {
-    stroke-dasharray: 280;
-    animation: draw1 3s linear forwards;
-  }
 
   .path1 {
-    stroke-dasharray: 280;
+    stroke-dasharray: 230;
     animation: draw1 1.5s linear forwards;
   }
 
@@ -632,7 +635,7 @@ h1.headerMainBold{
 
   @keyframes draw1 {
     from {
-      stroke-dashoffset: 280;
+      stroke-dashoffset: 230;
     }
     to {
       stroke-dashoffset: 0;
@@ -658,7 +661,9 @@ h1.headerMainBold{
     position: fixed;
     right: 10%;
     top: 318px;
+    visibility:hidden;
     }
+
 
 /* ASTRONAUTS----------------------------------------------------*/
   .astronautImage {
@@ -691,7 +696,7 @@ h1.headerMainBold{
   margin-bottom: 15px;
 }
 
-#backToTop{
+a#backToTop{
   display: none;
 }
 
@@ -1008,6 +1013,9 @@ h4.graphicText.return {
     width: 600px;
     height: auto;
   }
+  .marginLeft{
+    margin-left:10px;
+  }
 }
 @media screen and (max-width: 1200px){
   .input-group {
@@ -1057,7 +1065,7 @@ h4.graphicText.return {
   }
 
 @media screen and (max-width: 1100px){
-  .container-middle{
+  .col-sm-12.middle{
     height: 1142px;
 background: url(../images/you-are-here.gif);
 background-repeat: no-repeat;
@@ -1066,6 +1074,13 @@ background-size: 103%;
 margin-bottom: 124px;
 margin-top: -28px;
   }
+
+  .prevNext {
+    background-size: 100% 100%;
+    height: 30px;
+    width: 30px;
+    margin-top: 173px !important;
+}
 }
 
 @media screen and (max-width: 992px){
@@ -1134,6 +1149,10 @@ h2.headerMainLight.headerCircle {
     padding-top: 48%;
     font-size: 38px;
     padding-left: 62px;
+}
+
+.col-sm-6.marginTop.topDesktop {
+    margin-top: 60px;
 }
 }
 
@@ -1271,7 +1290,7 @@ h2.headerMainLight.headerCircle {
 }
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 768px) {
   .merlinEngine {
     margin-top: -119px;
 }
@@ -1283,7 +1302,47 @@ h2.headerMainLight.headerCircle {
     font-size: 46px;
     padding-left: 62px;
 }
+.merlinEngine.firstEngine {
+      margin-top: 0px;
+      width: 77%;
+      margin: 0 auto;
+      margin-right: 20%;
+      margin-top: 39px;
+  }
+
+  .merlinEngine.thrust.merlinTwo {
+      margin-top: 0px;
+      width: 68%;
+      margin: 0 auto;
+      margin-right: 20%;
+      margin-top: -159px;
+  }
+
+  h2.headerMainLight.headerCircle.one {
+    padding-top: 2%;
+    font-size: 36px !important;
+    padding-left: 11px;
+    line-height: 36px !important;
 }
+
+
+  .col-sm-12.middle {
+    height: 600px;
+    background: url(../images/you-are-here.gif);
+    background-repeat: no-repeat;
+    background-position: left bottom;
+    background-size: 103%;
+    margin-bottom: 124px;
+    margin-top: -28px;
+}
+
+a#backToTop{
+  display:block;
+}
+}
+
+
+
 @media screen and (max-width: 740px) {
   h3.subHeader {
       font-size: 16px;
@@ -1401,6 +1460,7 @@ h2.headerMainLight.headerCircle {
     display: block;
     margin-bottom: 397px !important;
 }
+
 }
 
 @media screen and (max-width: 540px) {
@@ -1421,14 +1481,16 @@ h2.headerMainLight.headerCircle {
 
   #btnAstronautPage {
     width: 80%;
+    margin-left: 10px;
 }
-.container.middle {
-    height: 892px;
-    background: url(../images/you-are-here.gif);
-    background-repeat: no-repeat;
-    background-position: center bottom;
-    background-size: 155%;
-    margin-bottom: 215px;
+.col-sm-12.middle {
+  height: 488px;
+  background: url(../images/you-are-here.gif);
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  background-size: 162%;
+  margin-bottom: 128px;
+}
 }
 
 .thrustTxt {
@@ -1569,7 +1631,47 @@ p.graphicFacts {
     font-style: italic;
     font-size: 10px;
     letter-spacing: 1px;
-    width: 118%;
+    width: 100%;
+}
+
+.carousel-inner, .carousel-inner.stageOne {
+    height: 207px;
+}
+
+.prevNext {
+    background-size: 100% 100%;
+    height: 30px;
+    width: 30px;
+    margin-top: 89px !important;
+}
+
+span.number.xtraSmall {
+      font-size: 38px;
+}
+
+.circles-wrp {
+    margin-left: -15px;
+}
+.marginMinus{
+  margin-top:-100px;
+  margin-bottom: -50px;
+}
+
+
+.thrust.fairing {
+    width: 100%;
+    display: block;
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 2px;
+}
+h1.headerMainBold {
+    font-size: 32px;
+    text-transform: uppercase;
+    color: white;
+    font-weight: 700;
+    line-height: 33px;
+    margin-top: 0;
 }
 
 

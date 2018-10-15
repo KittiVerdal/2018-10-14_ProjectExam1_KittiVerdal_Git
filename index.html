@@ -12,33 +12,34 @@
     <title>Explore space travel journey | rocket | step-by-step | interactive | learning</title>
   </head>
 
-  <!--HEADER------------------------------------------------------------------------------------------------>
-  <header style="height:100vh;">
-    <video autoplay loop muted poster="images/Stars-sky-placeholder.jpg" id="starsVideo">
-          <source src="images/stars.mp4" type="video/mp4">
-        </video>
-    <div class="btnIntroPage"><span>Scroll<br>down for<br>takeoff</span></div>
-    <div class="container">
-      <div id="countdown">
-        <div id="countdown-number">10</div>
-      </div>
-      <div class="container" id="intro">
-        <h1 class="introTitle">Ready for<br>liftoff</h1>
-      </div>
-    </div>
-    <!---container--->
-  </header>
 
-  <!--BODY-------------------------------------------------------------------------------------------------->
+          <!--HEADER------------------------------------------------------------------------------------------------>
+          <header style="height:100vh;">
+            <video autoplay loop muted poster="images/Stars-sky-placeholder.jpg" id="starsVideo">
+                  <source src="images/stars.mp4" type="video/mp4">
+                </video>
+            <div class="btnIntroPage"><span>Scroll<br>down for<br>takeoff</span></div>
+            <div class="container">
+              <div id="countdown">
+                <div id="countdown-number">10</div>
+              </div>
+              <div class="container" id="intro">
+                <h1 class="introTitle">Ready for<br>liftoff</h1>
+              </div>
+            </div>
+            <!---container--->
+          </header>
 
   <body>
-    <div class="container-fluid" id="skyIndex">
+    <div id="showRocket"></div>
+    <div class="container-fluid sky" id="sky">
       <div class="container" id="rocketMargin">
         <div class="row">
-          <!--ROW 1:  WITH STAGE1 CAROUSEL AND ILLUSTRATIONS-------------------------------------------------->
           <div class="col-sm-12">
             <div class="stageNumber">1</div>
           </div>
+
+          <!--STAGE1 CAROUSEL AND ILLUSTRATIONS-------------------------------------------------->
           <div class="col-sm-12">
             <div class="carousel slide carouselWith" id="travelOne">
               <div class="carousel-inner">
@@ -66,43 +67,40 @@
               <!---carousel inner-->
             </div>
             <!---carousel-->
-
-
             <h3 class=subHeader><span class="orange">Stage 1</span> into space travel</h3>
             <h1 class="headerMainBold">You are starting the journey. The rocket is launching</h1>
-            <p class="bodyTextBottom">Falcon 9’s first stage incorporates nine Merlin engines and aluminum-lithium alloy tanks containing liquid oxygen and rocket-grade kerosene (RP-1) propellant. After ignition, a hold-before-release system ensures that all engines are verified
+            <p class="bodyTextBottom">This rocket incorporates nine Merlin engines and aluminum-lithium alloy tanks containing liquid oxygen and rocket-grade kerosene (RP-1) propellant. After ignition, a hold-before-release system ensures that all engines are verified
               for full-thrust performance before the rocket is released for flight. Then, with thrust greater than five 747s at full power, the Merlin engines launch the rocket to space. Unlike airplanes, a rocket's thrust actually increases with altitude;
-              Falcon 9 generates more than 1.7 million pounds of thrust at sea level but gets up to over 1.8 million pounds of thrust in the vacuum of space.</p>
+              Falcon 9 generates more than 1.7 million pounds of thrust at sea level but gets up to over 1.8 million pounds of thrust in the vacuum of space.<a href="https://www.spacex.com/falcon9">More details on the Falcon rocket here</a></p>
             <div id="journeyClocks"></div>
           </div>
-
 
           <div class="col-sm-6 marginBottom">
             <img alt="illustration comparing the height of a rocket to the statue of liberty" src="images/statueOfLibertyGraphic.svg" class="liberty" align="left">
             <h4 class="graphicText"><span class="number">70</span> Meters high</h4>
-            <svg height="5px" width="330px">
-              <path class="path1" stroke-width="2" fill="#FFFFFF" stroke="#FFFFFF" d="M 0 0 l 280 0"/>
+            <svg height="5px" width="230px">
+              <path class="path1" stroke-width="2" fill="#FFFFFF" stroke="#FFFFFF" d="M 0 0 l 230 0"/>
               <path class="path1" stroke-width="6" fill="#FFFFFF" stroke="#FFFFFF" d="M 0 0 l 118 0"/>
             </svg>
-            <p class="graphicFacts">With its nine first-stage Merlin engines clustered together, Falcon 9 can sustain up to two engine shutdowns during flight and still successfully complete its mission. Falcon 9 is the only launch vehicle in its class with this key reliability
-              feature.
+            <p class="graphicFacts">The Falcon 9 rocket is 70 meters high. As you can see in the illustration it is almost the same hight as the Statue of Liberty. This gives you some perspective on how high a rocket really is.
             </p>
           </div>
 
+
           <div class="col-sm-6">
-            <img alt="illustration of the nine Merline engines" src="images/merlin-engines.svg" class="merlinEngine" align="right">
+            <img alt="illustration of the nine Merline engines" src="images/merlin-engines.svg" class="merlinEngine thrust merlinTwo">
             <h4 class="graphicText"><span class="number">9</span> engines</h4>
-            <svg height="5px" width="330px">
-              <path class="path1" stroke-width="2" fill="#FFFFFF" stroke="#FFFFFF" d="M 0 0 l 280 0"/>
+            <svg height="5px" width="230px">
+              <path class="path1" stroke-width="2" fill="#FFFFFF" stroke="#FFFFFF" d="M 0 0 l 230 0"/>
               <path class="path1" stroke-width="6" fill="#FFFFFF" stroke="#FFFFFF" d="M 0 0 l 118 0"/>
             </svg>
             <p class="graphicFacts">With its nine first-stage Merlin engines clustered together, Falcon 9 can sustain up to two engine shutdowns during flight and still successfully complete its mission. Falcon 9 is the only launch vehicle in its class with this key reliability
-              feature.
+              feature. This is an illustration of how the engine lookes from beneath.
             </p>
 
-            <h4 class="graphicText"><span class="number">126</span> sek to launch</h4>
-            <svg height="5px" width="330px">
-              <path class="path1" stroke-width="2" fill="#FFFFFF" stroke="#FFFFFF" d="M 0 0 l 280 0"/>
+            <h4 class="graphicText"><span class="number xtraSmall">162</span> sec burntime</h4>
+            <svg height="5px" width="230px">
+              <path class="path1" stroke-width="2" fill="#FFFFFF" stroke="#FFFFFF" d="M 0 0 l 230 0"/>
               <path class="path1" stroke-width="6" fill="#FFFFFF" stroke="#FFFFFF" d="M 0 0 l 118 0"/>
             </svg>
           </div>
@@ -110,30 +108,28 @@
           <div class="clearfix"></div>
 
           <div class="col-sm-6 marginBottom">
-            <img alt="illustration of the nine Merline engines" src="images/thrust.svg" class="merlinEngine thrust" align="left">
+            <img alt="illustration of the nine Merline engines" src="images/thrust.svg" class="merlinEngine thrust firstEngine" align="left">
           </div>
 
-
-
           <div class="col-sm-6 marginBottom">
-            <h4 class="graphicText speed"><span class="number medium">934</span> KN</h4>
+            <h4 class="graphicText speed"><span class="number medium">7,607</span> KN</h4>
             <h5>Thrust at vaccum</h5>
-            <svg height="5px" width="330px">
-              <path class="path1" stroke-width="2" fill="#FFFFFF" stroke="#FFFFFF" d="M 0 0 l 280 0"/>
+            <svg height="5px" width="230px">
+              <path class="path1" stroke-width="2" fill="#FFFFFF" stroke="#FFFFFF" d="M 0 0 l 230 0"/>
               <path class="path1" stroke-width="6" fill="#FFFFFF" stroke="#FFFFFF" d="M 0 0 l 118 0"/>
             </svg>
-            <p class="graphicFacts">With its nine first-stage Merlin engines clustered together, Falcon 9 can sustain up to two engine shutdowns during flight and still successfully complete its mission. Falcon 9 is the only launch vehicle in its class with this key reliability
-              feature.
+            <p class="graphicFacts">After ignition, a hold-before-release system ensures that all engines are verified for full-thrust performance before the rocket is released for flight. Then, with thrust greater than five 747s at full power, the Merlin engines launch the rocket to space. Unlike airplanes, a rocket's thrust actually increases with altitude;
+              generating more than 1.7 million pounds of thrust at sea level but gets up to over 1.8 million pounds of thrust in the vacuum of space
             </p>
           </div>
           <div class="clearfix"></div>
 
+          <div class="marginMinus">
           <div class="col-sm-6">
             <div class="circle circleMargin" id="circles-2"></div>
           </div>
-
           <div class="col-sm-6">
-            <h2 class="headerMainLight headerCircle">Of journey is <span class="orange"> finished</span></h2>
+            <h2 class="headerMainLight headerCircle one">Of journey is <span class="orange"> finished</span></h2>
           </div>
           <div class="clearfix"></div>
 
@@ -142,93 +138,81 @@
           </div>
 
           <div class="col-sm-6 marginBottom">
-            <h2 class="headerMainLight headerCircle">Of journey <span class="blue"> remains </span></h2>
+            <h2 class="headerMainLight headerCircle one">Of journey <span class="darkblue"> remains </span></h2>
           </div>
+        </div>
 
-          <!--ROW 1:  WITH STAGE2 CAROUSEL AND ILLUSTRATIONS-------------------------------------------------->
-          <div class="col-sm-12">
-            <div class="stageNumber">2</div>
-          </div>
-          <div class="col-sm-12">
-            <div class="carousel slide carouselWith" id="travelTwo">
-              <div class="carousel-inner">
-                <div class="item active">
-                  <div class="fill" style="background-image:url(images/Falcon9-interstage-4.jpg);"></div>
-                </div>
-                <div class="item">
-                  <div class="fill" style="background-image:url(images/Falcon9-interstage-2.jpg);"></div>
-                </div>
-                <div class="item">
-                  <div class="fill" style="background-image:url(images/Falcon9-interstage-3.jpg);"></div>
-                </div>
-                <div class="item">
-                  <div class="fill" style="background-image:url(images/Falcon9-interstage-1.jpg);"></div>
-                </div>
-                <a class="left carousel-control" href="#travelTwo" data-slide="prev">
-          <img alt="previous" src="images/arrow1.svg" class="prevNext">
-          <span class="sr-only">Previous</span>
-        </a>
-                <a class="right carousel-control" href="#travelTwo" data-slide="next">
-          <img alt="previous" src="images/arrow2.svg" class="prevNext">
-          <span class="sr-only">Next</span>
-        </a>
+        <!--STAGE2 CAROUSEL AND ILLUSTRATIONS-------------------------------------------------->
+        <div class="col-sm-12">
+          <div class="stageNumber" id="hideRocketOne">2</div>
+        </div>
+
+        <div class="col-sm-12">
+          <div class="carousel slide carouselWith" id="travelTwo">
+            <div class="carousel-inner">
+              <div class="item active">
+                <div class="fill" style="background-image:url(images/Falcon9-interstage-4.jpg);"></div>
               </div>
-              <!---carousel inner-->
+              <div class="item">
+                <div class="fill" style="background-image:url(images/Falcon9-interstage-2.jpg);"></div>
+              </div>
+              <div class="item">
+                <div class="fill" style="background-image:url(images/Falcon9-interstage-3.jpg);"></div>
+              </div>
+              <div class="item">
+                <div class="fill" style="background-image:url(images/Falcon9-interstage-1.jpg);"></div>
+              </div>
+              <a class="left carousel-control" href="#travelTwo" data-slide="prev">
+        <img alt="previous" src="images/arrow1.svg" class="prevNext">
+        <span class="sr-only">Previous</span>
+      </a>
+              <a class="right carousel-control" href="#travelTwo" data-slide="next">
+        <img alt="previous" src="images/arrow2.svg" class="prevNext">
+        <span class="sr-only">Next</span>
+      </a>
             </div>
-            <!---carousel-->
-
-
-            <h3 class=subHeader><span class="orange">Stage 2</span> Interstage</h3>
-            <h2 class="headerMainLight">The lower part of the rocket returns to earth</h2>
-            <p class="bodyTextBottom">Falcon 9’s first stage incorporates nine Merlin engines and aluminum-lithium alloy tanks containing liquid oxygen and rocket-grade kerosene (RP-1) propellant. After ignition, a hold-before-release system ensures that all engines are verified
-              for full-thrust performance before the rocket is released for flight. Then, with thrust greater than five 747s at full power, the Merlin engines launch the rocket to space. Unlike airplanes, a rocket's thrust actually increases with altitude;
-              Falcon 9 generates more than 1.7 million pounds of thrust at sea level but gets up to over 1.8 million pounds of thrust in the vacuum of space.</p>
+            <!---carousel inner-->
           </div>
+          <!---carousel-->
 
-          <div class="col-sm-6">
-            <div class="thrustTxt">
-              <img alt="Illustration of rocket returning to land" src="images/interstage.svg" id="trust1" class="thrust fairing">
-              <h4 class="graphicText smallScreens return">Return to land</h4>
-              <svg height="5px" width="330px">
-          <path class="path1" stroke-width="2" fill="#FFFFFF" stroke="#FFFFFF" d="M 0 0 l 310 0"/>
-          <path class="path1" stroke-width="6" fill="#FFFFFF" stroke="#FFFFFF" d="M 0 0 l 118 0"/>
-          </svg>
-              <p class="graphicFacts smallScreens Speed">With its nine first-stage Merlin engines clustered together, Falcon 9 can sustain up to two engine shutdowns during flight and still successfully complete its mission. Falcon 9 is the only launch vehicle in its class with this key reliability
-                feature.
-              </p>
-            </div>
+          <h3 class=subHeader><span class="orange">Stage 2</span> Interstage</h3>
+          <h2 class="headerMainLight">The lower part of the rocket returns to earth</h2>
+          <p class="bodyTextBottom">The interstage is a composite structure that connects the first and second stages and holds the release and separation system. Falcon 9 uses an stage separation system for low-shock, highly reliable separation that can be tested on the ground, unlike other systems used on most launch vehicles. Falcon 9’s walls are made of aluminum-lithium alloy, a material made stronger and lighter than aluminum by the addition of lithium. After the separation the returning part makes a flip maneuver to start returning to earth, the the engines boost again to bring it towards landning site. When it reaches the atmosphere it needs a second boost to enter. Then it stears by aerodynamic guidance and uses its landing legs to land vertically. SpaceX was the first to retun and reuse this part of the rocket. Look at the images to see how the return looks, it's quite amazing.</p>
+        </div>
 
-          </div>
-
-          <div class="col-sm-6">
-            <div class="thrustTxt">
-              <img alt="Illustration of rocket returning to land" src="images/rocket-interstage-keep-going.svg" id="trust1" class="thrust fairing">
-              <h4 class="graphicText smallScreens return">Keeps moving towards space</h4>
-              <svg height="5px" width="330px">
-        <path class="path1" stroke-width="2" fill="#FFFFFF" stroke="#FFFFFF" d="M 0 0 l 310 0"/>
+        <div class="col-sm-6">
+          <div class="thrustTxt">
+            <img alt="Illustration of rocket returning to land" src="images/interstage.svg" class="thrust fairing">
+            <h4 class="graphicText">Return to land</h4>
+            <svg height="5px" width="230px">
+        <path class="path1" stroke-width="2" fill="#FFFFFF" stroke="#FFFFFF" d="M 0 0 l 230 0"/>
         <path class="path1" stroke-width="6" fill="#FFFFFF" stroke="#FFFFFF" d="M 0 0 l 118 0"/>
         </svg>
-              <p class="graphicFacts smallScreens Speed">With its nine first-stage Merlin engines clustered together, Falcon 9 can sustain up to two engine shutdowns during flight and still successfully complete its mission. Falcon 9 is the only launch vehicle in its class with this key reliability
-                feature.
-              </p>
-            </div>
-
+            <p class="graphicFacts Speed">Falcon 9 was designed from the beginning to be fully reusable, and carries landing legs which will land the rocket safely on Earth after takeoff. The landinglegs appear just before landing.
+            </p>
           </div>
-          <!---row------->
         </div>
 
+        <div class="col-sm-6">
+          <div class="thrustTxt">
+            <img alt="Illustration of rocket after interstage" src="images/rocket-interstage-keep-going.svg" class="thrust fairing">
+            <h4 class="graphicText">Keeps moving towards space</h4>
+            <svg height="5px" width="230px">
+      <path class="path1" stroke-width="2" fill="#FFFFFF" stroke="#FFFFFF" d="M 0 0 l 230 0"/>
+      <path class="path1" stroke-width="6" fill="#FFFFFF" stroke="#FFFFFF" d="M 0 0 l 118 0"/>
+      </svg>
+            <p class="graphicFacts">The second stage engine ignites a few seconds after stage separation, and can be restarted multiple times to place multiple payloads into different orbits.
+            </p>
+          </div>
+        </div>
         <!--ROW 4:YOU ARE HERE------------------------------------------------------------------------->
-        <div class="container middle" id="EngineClocks">
-          <div class="row">
+        <div class="col-sm-12 middle" id="EngineClocks">
             <h2 class="headerMainLight sectionFour">We are now entering space.<br> You are here.</h2>
             <h3 class="sectionFourText"> Space is completely silent. There are no athmosphere in space, which means that sound has no way to travel to be heard.</h3>
-          </div>
-          <!---row------------>
         </div>
 
-        <!--STAGE 3:  WITH STAGE2 CAROUSEL AND ILLUSTRATIONS-------------------------------------------------->
-        <div class="row">
-          <div class="col-sm-12">
+        <!--STAGE 3 CAROUSEL AND ILLUSTRATIONS-------------------------------------------------->
+          <div class="col-sm-12" id="hideRocketTwo">
             <div class="stageNumber">3</div>
           </div>
           <div class="col-sm-12">
@@ -252,38 +236,34 @@
               <!---carousel inner-->
             </div>
             <!---carousel-->
-            <h3 class=subHeader><span class="orange">Stage 3</span> Into space travel</h3>
+            <h3 class="subHeader"><span class="orange">Stage 3</span> Into space travel</h3>
             <h2 class="headerMainLight">Moving forward at full speed, and getting closer to target</h2>
-            <p class="bodyTextBottom">Falcon 9’s first stage incorporates nine Merlin engines and aluminum-lithium alloy tanks containing liquid oxygen and rocket-grade kerosene (RP-1) propellant. After ignition, a hold-before-release system ensures that all engines are verified
-              for full-thrust performance before the rocket is released for flight. Then, with thrust greater than five 747s at full power, the Merlin engines launch the rocket to space. Unlike airplanes, a rocket's thrust actually increases with altitude;
-              Falcon 9 generates more than 1.7 million pounds of thrust at sea level but gets up to over 1.8 million pounds of thrust in the vacuum of space.</p>
+            <p class="bodyTextBottom">The second stage, powered by a single Merlin vacuum engine, delivers Falcon 9’s payload to the desired orbit. The second stage engine ignites a few seconds after stage separation, and can be restarted multiple times to place multiple payloads into different orbits. For maximum reliability, the second stage has redundant igniter systems. Like the first stage, the second stage is made from a high-strength aluminum-lithium alloy.</p>
           </div>
-
           <!---column-->
-          <div class="clearfix"></div>
 
-          <div class="col-sm-6 marginTop marginBottom">
-            <img alt="illustration of the nine Merline engines" src="images/thrust.svg" class="merlinEngine thrust" align="left">
-          </div>
-
-
+          <div class="clearfix marginBottom"></div>
 
           <div class="col-sm-6 marginBottom">
-            <h4 class="graphicText speed"><span class="number medium"><br>1</span> engine <br><span class="number medium">934</span> KN</h4>
-            <svg height="5px" width="330px">
-            <path class="path1" stroke-width="2" fill="#FFFFFF" stroke="#FFFFFF" d="M 0 0 l 280 0"/>
-            <path class="path1" stroke-width="6" fill="#FFFFFF" stroke="#FFFFFF" d="M 0 0 l 118 0"/>
-          </svg>
-            <p class="graphicFacts">With its nine first-stage Merlin engines clustered together, Falcon 9 can sustain up to two engine shutdowns during flight and still successfully complete its mission. Falcon 9 is the only launch vehicle in its class with this key reliability
-              feature.
+            <img alt="illustration of the nine Merline engines" src="images/thrust.svg" class="merlinEngine thrust firstEngine" align="left">
+          </div>
+
+          <div class="col-sm-6 marginBottom">
+            <h4 class="graphicText speed"><span class="number medium">934</span> KN</h4>
+            <h5>Thrust at vaccum</h5>
+            <svg height="5px" width="230px">
+              <path class="path1" stroke-width="2" fill="#FFFFFF" stroke="#FFFFFF" d="M 0 0 l 230 0"/>
+              <path class="path1" stroke-width="6" fill="#FFFFFF" stroke="#FFFFFF" d="M 0 0 l 118 0"/>
+            </svg>
+            <p class="graphicFacts">Force, and thus thrust, is measured using the International System of Units (SI) in newtons (symbol: N), and represents the amount needed to accelerate 1 kilogram of mass at the rate of 1 meter per second per second. In mechanical engineering, force orthogonal to the main load (such as in parallel helical gears) is referred to as thrust.
             </p>
           </div>
           <div class="clearfix"></div>
 
+          <div class="marginMinus">
           <div class="col-sm-6">
             <div class="circle circleMargin" id="circles-4"></div>
           </div>
-
           <div class="col-sm-6">
             <h2 class="headerMainLight headerCircle">Of journey is <span class="orange"> finished</span></h2>
           </div>
@@ -296,188 +276,182 @@
           <div class="col-sm-6 marginBottom">
             <h2 class="headerMainLight headerCircle">Of journey <span class="blue"> remains </span></h2>
           </div>
-
         </div>
 
+        <div class="clearfix"></div>
 
-        <div class="row">
-          <div class="col-sm-12">
-            <div class="stageNumber">4</div>
-          </div>
-          <div class="col-sm-12">
-            <div class="carousel slide carouselWith" id="stageFour">
-              <div class="carousel-inner">
-                <div class="item active">
-                  <div class="fill" style="background-image:url(images/Falcon9-interstage-4.jpg);"></div>
-                </div>
-                <div class="item">
-                  <div class="fill" style="background-image:url(images/Falcon9-interstage-2.jpg);"></div>
-                </div>
-                <div class="item">
-                  <div class="fill" style="background-image:url(images/Falcon9-interstage-3.jpg);"></div>
-                </div>
-                <div class="item">
-                  <div class="fill" style="background-image:url(images/Falcon9-interstage-1.jpg);"></div>
-                </div>
-                <a class="left carousel-control" href="#stageFour" data-slide="prev">
-                <img alt="previous" src="images/arrow1.svg" class="prevNext">
-                <span class="sr-only">Previous</span>
-              </a>
-                <a class="right carousel-control" href="#stageFour" data-slide="next">
-                <img alt="previous" src="images/arrow2.svg" class="prevNext">
-                <span class="sr-only">Next</span>
-              </a>
+        <div class="col-sm-12">
+          <div class="stageNumber">4</div>
+        </div>
+
+        <div class="col-sm-12">
+          <div class="carousel slide carouselWith" id="stageFour">
+            <div class="carousel-inner">
+              <div class="item active">
+                <div class="fill" style="background-image:url(images/bilde1.jpg);"></div>
               </div>
-              <!---carousel inner-->
+              <div class="item">
+                <div class="fill" style="background-image:url(images/bilde2.jpg);"></div>
+              </div>
+              <div class="item">
+                <div class="fill" style="background-image:url(images/bilde3.jpg);"></div>
+              </div>
+              <div class="item">
+                <div class="fill" style="background-image:url(images/bilde4.jpg);"></div>
+              </div>
+              <a class="left carousel-control" href="#stageFour" data-slide="prev">
+              <img alt="previous" src="images/arrow1.svg" class="prevNext">
+              <span class="sr-only">Previous</span>
+            </a>
+              <a class="right carousel-control" href="#stageFour" data-slide="next">
+              <img alt="previous" src="images/arrow2.svg" class="prevNext">
+              <span class="sr-only">Next</span>
+            </a>
             </div>
-            <!---carousel-->
-            <h3 class=subHeader><span class="orange">Stage 4</span> Into space travel</h3>
-            <h2 class="headerMainLight">The final stage and a successful mission</h2>
-            <p class="bodyTextBottom">Falcon 9’s first stage incorporates nine Merlin engines and aluminum-lithium alloy tanks containing liquid oxygen and rocket-grade kerosene (RP-1) propellant. After ignition, a hold-before-release system ensures that all engines are verified
-              for full-thrust performance before the rocket is released for flight. Then, with thrust greater than five 747s at full power, the Merlin engines launch the rocket to space. Unlike airplanes, a rocket's thrust actually increases with altitude;
-              Falcon 9 generates more than 1.7 million pounds of thrust at sea level but gets up to over 1.8 million pounds of thrust in the vacuum of space.</p>
+            <!---carousel inner-->
           </div>
+          <!---carousel-->
+          <h3 class=subHeader><span class="orange">Stage 4</span> Into space travel</h3>
+          <h2 class="headerMainLight">The final stage and a successful mission</h2>
+          <p class="bodyTextBottom">Falcon 9 is a two-stage rocket designed and manufactured by SpaceX for the reliable and safe transport of satellites and the Dragon spacecraft into orbit. Falcon 9 is the first orbital class rocket capable of reflight. SpaceX believes rocket reusability is the key breakthrough needed to reduce the cost of access to space and enable people to live on other planets.
 
+Falcon 9 made history in 2012 when it delivered Dragon into the correct orbit for rendezvous with the International Space Station, making SpaceX the first commercial company ever to visit the station. Since then Falcon 9 has made numerous trips to space, delivering satellites to orbit as well as delivering and returning cargo from the space station for NASA. Falcon 9, along with the Dragon spacecraft, was designed from the outset to deliver humans into space and under an agreement with NASA, SpaceX is actively working toward this goal.</p>
+        </div>
 
-          <div class="col-sm-6">
-            <div class="thrustTxt">
-              <h4 class="graphicText"><img alt="Falcon 9 Composite fairing illustration" src="images/Falcon9-dragon-fairing.svg" class="thrust fairing" align="left">
-                <div class="clearfix"></div>
+        <div class="col-sm-6">
+          <div class="thrustTxt">
+            <h4 class="graphicText"><img alt="Falcon 9 Composite fairing illustration" src="images/Falcon9-dragon-fairing.svg" class="thrust fairing" align="left">
+              <div class="clearfix"></div>
 
-                <span class="number medium">1</span> engine <br>
-                <span class="number medium">934</span> KN</h4>
-              <h5>Thrust at vaccum</h5>
-              <svg height="5px" width="330px">
-                <path class="path1" stroke-width="2" fill="#FFFFFF" stroke="#FFFFFF" d="M 0 0 l 310 0"/>
-                <path class="path1" stroke-width="6" fill="#FFFFFF" stroke="#FFFFFF" d="M 0 0 l 118 0"/>
-                </svg>
-              <p class="graphicFacts Speed">With its nine first-stage Merlin engines clustered together, Falcon 9 can sustain up to two engine shutdowns during flight and still successfully complete its mission. Falcon 9 is the only launch vehicle in its class with this key reliability
-                feature.
-              </p>
-            </div>
-
-          </div>
-
-          <div class="col-sm-6">
-            <div class="thrustTxt">
-              <h4 class="graphicText"><img alt="Falcon 9 Composite fairing illustration" src="images/Falcon9-Composite-fairing.svg" class="thrust fairing" align="left">
-                <div class="clearfix"></div>
-                <span class="number medium">1</span> engine <br>
-                <span class="number medium">934</span> KN</h4>
-              <h5>Thrust at vaccum</h5>
-              <svg height="5px" width="330px">
-              <path class="path1" stroke-width="2" fill="#FFFFFF" stroke="#FFFFFF" d="M 0 0 l 310 0"/>
+              <span class="number medium">1</span> engine <br>
+              <span class="number medium">Dragon</span></h4>
+            <svg height="5px" width="230px">
+              <path class="path1" stroke-width="2" fill="#FFFFFF" stroke="#FFFFFF" d="M 0 0 l 230 0"/>
               <path class="path1" stroke-width="6" fill="#FFFFFF" stroke="#FFFFFF" d="M 0 0 l 118 0"/>
               </svg>
-              <p class="graphicFacts Speed">With its nine first-stage Merlin engines clustered together, Falcon 9 can sustain up to two engine shutdowns during flight and still successfully complete its mission. Falcon 9 is the only launch vehicle in its class with this key reliability
-                feature.
-              </p>
-            </div>
-
+            <p class="graphicFacts Speed">Dragon carries cargo in the spacecraft’s pressurized capsule and unpressurized trunk, which can also accommodate secondary payloads. In the future, Dragon will carry astronauts in the pressurized capsule as well.
+            </p>
           </div>
-
-
-          <!--ROCKET-------------------------------------------->
-          <div id="rocketFixed">
-            <img id="rocketTop" class="rocket" alt="Rocket launching illustration last stage" src="images/rocket-Top-Part.svg">
-            <div class="clearfix"></div>
-            <img id="rocketMedium" class="rocket" alt="Rocket launching illustration second stage" src="images/rocket-Medium-Part.svg">
-            <div class="clearfix"></div>
-            <img id="rocketLower" class="rocket" alt="Rocket launching illustration interstage" src="images/rocket-Lower-Part.svg">
-            <div id="sequence" class="rocketFireBg">
-              <img id="rocketFire" alt="Rocket launching fire illustration" src="images/Rocket-launch-1.svg" width="130" height="130">
-            </div>
-          </div>
-          <!---row------->
-          <!---container--->
         </div>
-        <!---container-fluid--->
 
-        <!--ROW 7:  TITLE AND STARS------------------------------------------------------------------------->
-        <div class="container stars marginTopFirst">
+        <div class="col-sm-6">
+          <div class="thrustTxt">
+            <h4 class="graphicText"><img alt="Falcon 9 Composite fairing illustration" src="images/Falcon9-Composite-fairing.svg" class="thrust fairing" align="left">
+              <div class="clearfix"></div>
+              <span class="number medium">1</span> engine <br>
+              <span class="number medium">Composite</span></h4>
+            <svg height="5px" width="230px">
+            <path class="path1" stroke-width="2" fill="#FFFFFF" stroke="#FFFFFF" d="M 0 0 l 230 0"/>
+            <path class="path1" stroke-width="6" fill="#FFFFFF" stroke="#FFFFFF" d="M 0 0 l 118 0"/>
+            </svg>
+            <p class="graphicFacts Speed">The payload fairing is for the delivery of satellites to destinations in low Earth orbit (LEO), geosynchronous transfer orbit (GTO) and beyond.
+            </p>
+          </div>
+
+        </div>
+    </div>
+      <!---row--->
+    </div>
+      <!---container--------->
+
+      <!--ROW 7:  TITLE AND STARS------------------------------------------------------------------------->
+      <div class="col-sm-12 stars marginTopFirst">
+        <div class="container">
+          <h2 class="headerMainLight sectionFour smallScreens marginLeft">You have arrived at your destination.<br> Take a break and look at the stars</h2>
+          <h3 class="sectionFourText marginLeft"> On a good night, you can see about 19,000,000,000,000,000 miles.</h3>
+          <a class="btnStyle marginLeft" id="btnAstronautPage" title="Scroll down for takeoff" href="astronauts.html">Learn more about astronauts here</a>
+          <div class="stars"></div>
+          <canvas id="nokey" width="800" height="800">
+                  Your Browser Don't Support Canvas, Please Download Chrome
+                  </canvas>
+        </div>
+        <!---row------------>
+      </div>
+      <!---container--------->
+
+      <div id="rocketFixed">
+        <img id="rocketTop" class="rocket" alt="Rocket launching illustration last stage" src="images/rocket-Top-Part.svg">
+        <div class="clearfix"></div>
+        <img id="rocketMedium" class="rocket" alt="Rocket launching illustration second stage" src="images/rocket-Medium-Part.svg">
+        <div class="clearfix"></div>
+        <img id="rocketLower" class="rocket" alt="Rocket launching illustration interstage" src="images/rocket-Lower-Part.svg">
+        <div id="sequence" class="rocketFireBg">
+          <img id="rocketFire" alt="Rocket launching fire illustration" src="images/Rocket-launch-1.svg" width="130" height="130">
+        </div>
+      </div>
+
+    </div>
+    <!---container-fluid---->
+
+    <!--NAVIGATION-------------------------------------------->
+    <nav class="navbar navbar-default navbar-fixed-top">
+      <div class="container-fluid navBackground">
+        <div class="container">
+          <div class="navbar-header">
+            <a href="index.html"><img alt="SpaceLaunch-logo" src="images/spaceLaunchLogo.svg" class="logo"></a>
+          </div>
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#collapsemenu" aria-expanded="false">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="collapsemenu">
+            <ul class="nav navbar-nav">
+              <li> <a href="index.html" class="navPages navColourActive">The journey</a></li>
+              <li> <a href="astronauts.html" class="navPages">Astronauts</a></li>
+              <li> <a href="launches.html" class="navPages">Launches</a></li>
+              <li> <a href="contact.html" class="navPages">Contact</a></li>
+            </ul>
+          </div>
+        </div>
+        <!---container-->
+      </div>
+      <!---container-fluid-->
+    </nav>
+
+    <!--FOOTER---------------------------------------------->
+    <footer>
+      <div class="container-fluid footer" id="footer">
+        <div class="container footer">
           <div class="row">
-            <h2 class="headerMainLight sectionFour smallScreens">You have arrived at your destination.<br> Take a break and look at the stars</h2>
-            <h3 class="sectionFourText"> On a good night, you can see about 19,000,000,000,000,000 miles.</h3>
-            <a class="btnStyle" id="btnAstronautPage" title="Scroll down for takeoff" href="astronauts.html">Learn more about astronauts here</a>
-            <div class="stars"></div>
-            <canvas id="nokey" width="800" height="800">
-                    Your Browser Don't Support Canvas, Please Download Chrome
-                    </canvas>
-          </div>
-          <!---row------------>
-        </div>
-        <!---container------------>
-
-        <!--NAVIGATION-------------------------------------------->
-        <nav class="navbar navbar-default navbar-fixed-top">
-          <div class="container-fluid navBackground">
-            <div class="container">
-              <div class="navbar-header">
-                <a href="index.html"><img alt="SpaceLaunch-logo" src="images/spaceLaunchLogo.svg" class="logo"></a>
-              </div>
-              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#collapsemenu" aria-expanded="false">
-                  <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-        </button>
-              <div class="collapse navbar-collapse" id="collapsemenu">
-                <ul class="nav navbar-nav">
-                  <li> <a href="index.html" class="navPages navColourActive">The journey</a></li>
-                  <li> <a href="astronauts.html" class="navPages">Astronauts</a></li>
-                  <li> <a href="launches.html" class="navPages">Launches</a></li>
-                  <li> <a href="contact.html" class="navPages">Contact</a></li>
-                </ul>
-              </div>
+            <div class="col-sm-3">
+              <a href="index.html"><img alt="SpaceLaunch-logo" src="images/spaceLaunchLogo.svg" class="logoFooter"></a>
             </div>
-            <!---container-->
-          </div>
-          <!---container-fluid-->
-        </nav>
-
-        <!--FOOTER---------------------------------------------->
-        <footer>
-          <div class="container-fluid footer" id="footer">
-            <div class="container footer">
-              <div class="row">
-                <div class="col-sm-3">
-                  <a href="index.html"><img alt="SpaceLaunch-logo" src="images/spaceLaunchLogo.svg" class="logoFooter"></a>
-                </div>
-                <div class="col-sm-3">
-                  <p class="footerText"> Get more information: <br> E-mail:<a href="mailto:kitti@jbl.no"> spacelaunch@spacex.com</a></p>
-                </div>
-                <section>
-                  <div class="container">
-                    <div class="row">
-                      <div class="col-sm-6">
-                        <h5 class="subscribeTitle">
-                          Subscribe for newsletter and get updates on current space programs
-                        </h5>
-                        <form action="#">
-                          <div class="input-group">
-                            <input class="btn btn-lg" name="email" id="email" type="email" placeholder="Your Email" required>
-                            <button class="btn btn-info btn-lg" type="submit">Subscribe</button>
-                          </div>
-                        </form>
+            <div class="col-sm-3">
+              <p class="footerText"> Get more information: <br> E-mail:<a href="mailto:kitti@jbl.no"> spacelaunch@spacex.com</a></p>
+            </div>
+            <section>
+              <div class="container">
+                <div class="row">
+                  <div class="col-sm-6">
+                    <h5 class="subscribeTitle">
+                      Subscribe for newsletter and get updates on current space programs</h5>
+                    <form action="#">
+                      <div class="input-group">
+                        <input class="btn btn-lg" name="email" id="email" type="email" placeholder="Your Email" required>
+                        <button class="btn btn-info btn-lg" type="submit">Subscribe</button>
                       </div>
-                    </div>
-                    <!---row-->
+                    </form>
                   </div>
-                  <!---container-->
-                </section>
+                </div>
+                <!---row-->
               </div>
-              <!---row-->
-            </div>
-            <!---container-->
+              <!---container-->
+            </section>
           </div>
-          <!---container-fluid---->
-        </footer>
+          <!---row-->
+        </div>
+        <!---container-->
+      </div>
+      <!---container-fluid---->
+    </footer>
 
-        <script src="js/jquery.slim.min.js"></script>
-        <script src="js/tether.min.js"></script>
-        <script src="js/bootstrap.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
-        <script src="js/circle.js"></script>
-        <script src="js/script.js"></script>
-        <script src="js/stars.js"></script>
+    <script src="js/jquery.slim.min.js"></script>
+    <script src="js/tether.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+    <script src="js/circle.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/stars.js"></script>
   </body>
